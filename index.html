@@ -103,6 +103,26 @@ background-image: none !important;
   background-repeat: no-repeat !important;
 }
 
+/* Seção "Veja por dentro" — espaço para não ser coberta pela onda */
+.elementor-element-vejapordentro {
+  padding: 60px 20px 120px !important;
+  position: relative;
+  z-index: 2;
+}
+.elementor-element-vejapordentro h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: 800;
+}
+@media (max-width: 768px) {
+  .elementor-element-vejapordentro {
+    padding: 40px 16px 100px !important;
+  }
+  .elementor-element-vejapordentro h2 {
+    font-size: 24px;
+  }
+}
+
 /* Logo da hero em círculo (clip-path corta a margem xadrez do JPEG) */
 .logo-hero-round {
   border-radius: 50% !important;
@@ -111,7 +131,7 @@ background-image: none !important;
   max-width: 500px;
   width: 100%;
   height: auto;
-  clip-path: circle(47% at 50% 50%);
+  clip-path: circle(45% at 50% 50%);
 }
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
