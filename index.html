@@ -123,6 +123,22 @@ background-image: none !important;
   }
 }
 
+/* Galerias em grid 2x2 no mobile (em vez de stack vertical) */
+@media (max-width: 767px) {
+  .elementor-element-vejapordentro .elementor-container,
+  [data-id="novas01"] .elementor-container {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 12px;
+  }
+  .elementor-element-vejapordentro .elementor-col-25,
+  [data-id="novas01"] .elementor-col-25 {
+    width: calc(50% - 6px) !important;
+    max-width: calc(50% - 6px) !important;
+    flex: 0 0 calc(50% - 6px) !important;
+  }
+}
+
 /* Logo da hero em círculo (clip-path corta a margem xadrez do JPEG) */
 .logo-hero-round {
   border-radius: 50% !important;
